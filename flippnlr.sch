@@ -2634,7 +2634,7 @@ Wire Wire Line
 	10000 3900 10000 3950
 Wire Wire Line
 	10000 3950 10050 3950
-Text Notes 7050 750  0    50   ~ 0
+Text Notes 7050 650  0    50   ~ 0
 R1-R20: Min 3/4W eg: RC2010FK-1362RL
 Wire Wire Line
 	5700 1100 5750 1100
@@ -3273,4 +3273,10 @@ Wire Wire Line
 Connection ~ 4950 7000
 Wire Wire Line
 	4950 7000 5000 7000
+Text Notes 7950 5800 0    50   ~ 0
+RC LED
+Text Notes 5800 7350 0    50   ~ 0
+Activity LED
+Text Notes 7050 750  0    50   ~ 0
+Pixel layout is as viewed from PCB (rear of display)
 $EndSCHEMATC
