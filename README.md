@@ -9,7 +9,7 @@ display using 3D-printed components.
 
 The flipdot mechanism is 3D printed from a freecad model:
 
- - flipdot.FCStd : FreeCAD model for 3D printing
+ - flipdot.FCStd : FreeCAD model
  - flipdot_body.stl : Mounting frame for flip-dot
  - flipdot_pixel.stl : Flip pixel
 
@@ -40,3 +40,18 @@ and latched to energise the chosen coils:
 Panels are designed to be daisy-chained to build up a larger panel.
 
 TBA
+
+## License
+
+CC0 Public Domain
+
+To the extent possible under law, the author(s) have dedicated
+all copyright and related and neighboring rights to this software
+to the public domain worldwide. This software is distributed
+without any warranty.
+
+You should have received a copy of the CC0 Public Domain Dedication
+along with this software. If not, see:
+
+http://creativecommons.org/publicdomain/zero/1.0/
+
