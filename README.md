@@ -16,7 +16,7 @@ The flipdot mechanism is 3D printed from a freecad model:
 A small permanent magnet in the pixel is rotated as required by
 pulsing a solenoid wound over a steel screw.
 
-![Test Coil](testcoil.jpg "Test Coil Assembly")
+![Test Coil](images/testcoil.jpg "Test Coil Assembly")
 
 Wind about 500 turns of #42 guitar pickup wire as a pair onto
 an M3x8mm screw, then join the end of one wire to the start of the
@@ -25,7 +25,7 @@ voltage rail. The desired set or clear movement is triggered by
 shorting the desired coil to ground through a low-side switch
 or darlington driver.
 
-![Prototype Test Assembly](prototype.jpg "Testing Prototype")
+![Prototype Test Assembly](images/prototype.jpg "Testing Prototype")
 
 ## 4x5 Modular Panel
 
@@ -33,7 +33,7 @@ Each pixel in a 4x5 array has a pair of low-side drivers connected
 to 2 bits in a 40-bit shift register. Data is shifted into the display
 and latched to energise the chosen coils:
 
-![Block Diagram](flippnlr_block.svg "Simplified Schematic")
+![Block Diagram](images/flippnlr_block.svg "Simplified Schematic")
 
  - flippnlr.pro : Kicad schematic and PCB
 
