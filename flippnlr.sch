@@ -2978,13 +2978,13 @@ Text GLabel 4950 6500 0    50   Input ~ 0
 LC2
 Text GLabel 4950 6600 0    50   Input ~ 0
 LS2
-Text GLabel 4950 6700 0    50   Input ~ 0
-LS3
-Text GLabel 4950 6800 0    50   Input ~ 0
-LC3
 Text GLabel 4950 6900 0    50   Input ~ 0
-LS7
+LS3
 Text GLabel 4900 7000 0    50   Input ~ 0
+LC3
+Text GLabel 4950 6700 0    50   Input ~ 0
+LS7
+Text GLabel 4950 6800 0    50   Input ~ 0
 LC7
 Wire Wire Line
 	4950 6500 5000 6500
