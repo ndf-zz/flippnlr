@@ -42,7 +42,7 @@ Insert screw in winder spindle, finger tight.
 
 Drag out wires as a pair and attach to winder spindle near screw
 with a small piece of tape, leaving 20mm to 50mm of spare wire 
-betweem the screw and the marked section. Move home tape to the side.
+between the screw and the marked section. Move home tape to the side.
 
 ![Attach Wires](images/attach_wires.jpg "Attach Wires")
 
