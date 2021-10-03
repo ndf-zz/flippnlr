@@ -1,7 +1,5 @@
 # flipdot
 
-DiY Electromechanical Display
-
 A DiY electromechanical "Flip-Dot" matrix 
 display using 3D-printed components.
 
@@ -13,19 +11,83 @@ The flipdot mechanism is 3D printed from a freecad model:
  - flipdot_body.stl : Mounting frame for flip-dot
  - flipdot_pixel.stl : Flip pixel
 
-A small permanent magnet in the pixel is rotated as required by
+A small permanent magnet mounted in the pixel is rotated as required by
 pulsing a solenoid wound over a steel screw.
 
-![Test Coil](images/testcoil.jpg "Test Coil Assembly")
+## Solenoid Construction
 
-Wind about 500 turns of #42 guitar pickup wire as a pair onto
-an M3x8mm screw, then join the end of one wire to the start of the
-other. The join becomes a centre tap, which is connected to the positive
-voltage rail. The desired set or clear movement is triggered by
-shorting the desired coil to ground through a low-side switch
-or darlington driver.
+Slip an 8mm length of heatshrink tube over an M3x10mm steel screw with
+a head diameter between 5.0mm and 5.5mm. Make sure the screw is plain
+steel and not stainless.
 
-![Prototype Test Assembly](images/prototype.jpg "Testing Prototype")
+![M3 Screw](images/coil_01_materials.jpg "M3 Screw")
+
+After shrinking, there should be between 1.5mm and 2.0mm of thread exposed.
+
+![Leave 2mm Thread](images/coil_02_shrink.jpg "Leave 2mm Thread")
+
+Setup the winder with two spools of wire. Attach wires to a piece of tape
+on the guide and ensure a clean feed of wire off each spool. this is the
+home position. Set speed control to minimum and power on.
+
+![Home Setup](images/home_setup.jpg "Home Setup")
+
+Using white correction fluid, mark a single 40mm length on the left wire.
+
+![Mark Left Wire](images/mark_left_wire.jpg "Mark Left Wire")
+
+Insert screw in winder spindle, finger tight.
+
+![Insert Screw](images/insert_screw.jpg "Insert Screw")
+
+Drag out wires as a pair and attach to winder spindle near screw
+with a small piece of tape, leaving 20mm to 50mm of spare wire 
+betweem the screw and the marked section. Move home tape to the side.
+
+![Attach Wires](images/attach_wires.jpg "Attach Wires")
+
+Carefully turn spindle forward by hand to wind a few turns along
+the length of the screw, crossing back over where the start wires
+leave the screw. Check the start wires are
+not broken, then trim the free ends near to the marked section.
+
+![Pre Winding](images/pre_winding.jpg "Pre Winding")
+
+Reset counter on the winder and set speed control to minimum.
+Inspect spools and feed wires for tangles or twists. Prepare a 30mm
+length of 8mm wide capton tape (or clear packing tape), ready to wrap
+the completed coil.
+
+Guiding the wire with one hand, increase the speed control on the winder
+to a comfortable rate. Guide the wire back and forth across the length of
+the screw to get an even wrapping, keeping an eye on the counter. As
+the wind count approaches 500, slow down the winder and guide the wire to
+the right hand side of the screw, stopping at about 550 turns.
+
+![550 Turns](images/550_turns.jpg "550 Turns")
+
+Place the feed wires across the coil, and wrap with capton tape. Press
+firmly to secure the assembly.
+
+![Capton Tape](images/capton_tape.jpg "Capton Tape")
+
+Gently wind back the feed spools to remove slack in the feed wires
+clearly separating the left and right feeds. Attach wires to the home
+position with a piece of tape, then mark the right feed wire with
+two roughly 10mm lengths of white correction fluid.
+
+![Mark End](images/mark_end.jpg "Mark End")
+
+Cut the feed wires near the home position, remove tape from spindle
+and then carefully unscrew coil from spindle by holding the screw
+assembly and turning the winder forward slowly by hand. Attach a 
+plastic spacer until ready to install in a flipdot assembly.
+
+![Coil Ready](images/coil_ready.jpg "Coil Ready")
+
+## Flipdot Assembly
+
+TBA
 
 ## 4x5 Modular Panel
 
