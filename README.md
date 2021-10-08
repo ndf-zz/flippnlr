@@ -5,6 +5,8 @@ display using 3D-printed components.
 
 ## Flipdot Assembly
 
+![Flipdot](images/fd_single.jpg "Flipdot")
+
 The flipdot mechanism is 3D printed from a freecad model:
 
  - flipdot.FCStd : FreeCAD model
@@ -12,7 +14,7 @@ The flipdot mechanism is 3D printed from a freecad model:
  - flipdot_pixel.stl : Flip pixel
 
 A small permanent magnet mounted in the pixel is rotated as required by
-pulsing a solenoid wound over a steel screw.
+pulsing a centre-tapped solenoid wound over a steel screw.
 
 ## Solenoid Construction
 
@@ -26,9 +28,10 @@ After shrinking, there should be between 1.5mm and 2.0mm of thread exposed.
 
 ![Leave 2mm Thread](images/coil_02_shrink.jpg "Leave 2mm Thread")
 
-Setup the winder with two spools of wire. Attach wires to a piece of tape
-on the guide and ensure a clean feed of wire off each spool. this is the
-home position. Set speed control to minimum and power on.
+Setup a winder with two spools of #43 polyurethane magnet wire.
+Attach wires to a piece of tape on the guide and ensure a clean
+feed of wire off each spool. This is the home position. Set speed
+control to minimum and power on.
 
 ![Home Setup](images/home_setup.jpg "Home Setup")
 
@@ -46,7 +49,7 @@ between the screw and the marked section. Move home tape to the side.
 
 ![Attach Wires](images/attach_wires.jpg "Attach Wires")
 
-Carefully turn spindle forward by hand to wind a few turns along
+Carefully turn spindle forward by hand to wind a few loose turns along
 the length of the screw, crossing back over where the start wires
 leave the screw. Check the start wires are
 not broken, then trim the free ends near to the marked section.
@@ -54,22 +57,18 @@ not broken, then trim the free ends near to the marked section.
 ![Pre Winding](images/pre_winding.jpg "Pre Winding")
 
 Reset counter on the winder and set speed control to minimum.
-Inspect spools and feed wires for tangles or twists. Prepare a 30mm
-length of 8mm wide capton tape (or clear packing tape), ready to wrap
-the completed coil.
+Inspect spools and feed wires for tangles or twists.
 
 Guiding the wire with one hand, increase the speed control on the winder
 to a comfortable rate. Guide the wire back and forth across the length of
 the screw to get an even wrapping, keeping an eye on the counter. As
-the wind count approaches 500, slow down the winder and guide the wire to
-the right hand side of the screw, stopping at about 550 turns.
+the wind count passes 900, slow down the winder and guide the wire to
+the right hand side of the screw, stopping at about 1000 turns.
 
-![550 Turns](images/550_turns.jpg "550 Turns")
+![Turned](images/turned.jpg "Turned")
 
-Place the feed wires across the coil, and wrap with capton tape. Press
-firmly to secure the assembly.
-
-![Capton Tape](images/capton_tape.jpg "Capton Tape")
+Place the feed wires across the coil, and use a drop of pva glue to
+secure.
 
 Gently wind back the feed spools to remove slack in the feed wires
 clearly separating the left and right feeds. Attach wires to the home
