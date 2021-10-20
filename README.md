@@ -1,5 +1,7 @@
 # flipdot
 
+![Panel 4x5](images/fd_panel.jpg "Panel 4x5`")
+
 A DiY electromechanical "Flip-Dot" matrix 
 display using 3D-printed components.
 
@@ -56,7 +58,7 @@ Guiding the wire with one hand, increase the speed control on the winder
 to a comfortable rate. Guide the wire back and forth across the length of
 the screw to get an even wrapping, keeping an eye on the counter. As
 the wind count passes 900, slow down the winder and guide the wire to
-the right hand side of the screw, stopping at about 1000 turns.
+the right and then left side of the screw, stopping at about 1000 turns.
 
 ![Turned](images/turned.jpg "Turned")
 
@@ -92,6 +94,24 @@ and latched to energise the chosen coils:
  - flippnlr.pro : Kicad schematic and PCB
 
 Panels are designed to be daisy-chained to build up a larger panel.
+
+## Interface
+
+A chain of display panels is driven using three signals:
+
+ - D Data input (SDI)
+ - DC Data clock (SCK)
+ - RC Latch Clock 
+
+The required data is shifted into the display using D and DC, then
+latched to flipper coils by strobing RC. DC and RC have a minimum period
+of 200ns as shown below:
+
+![Timing Diagram](images/timing.svg "Timing Diagram")
+
+D and DC can be driven by an SPI peripheral.
+
+## Firmware
 
 TBA
 
