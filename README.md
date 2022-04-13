@@ -1,119 +1,86 @@
-# flipdot
+# Flipdot
 
 ![Panel 4x5](images/fd_panel.jpg "Panel 4x5`")
 
-A DiY electromechanical "Flip-Dot" matrix 
-display using 3D-printed components.
+How _not_ to make a DiY electromechanical "Flip-Dot" matrix display.
 
-## Flipdot Assembly
+## Coil Winding
 
-![Flipdot](images/fd_single.jpg "Flipdot")
+![Screw](images/coil_01_materials.jpg "Screw")
 
-The flipdot mechanism is 3D printed from a freecad model:
+M3 steel screw and heat shrink tube.
 
- - flipdot.FCStd : FreeCAD model
- - flipdot_body.stl : Mounting frame for flip-dot
- - flipdot_pixel.stl : Flip pixel
+![Shrink](images/coil_02_shrink.jpg "Shrink")
 
-A small permanent magnet mounted in the pixel is rotated as required by
-pulsing a centre-tapped solenoid wound over a steel screw.
+Shrink onto screw.
 
-## Solenoid Construction
+![Glue Fillet](images/fdb_08_screw.jpg "Glue Fillet")
 
-Slip an 8mm length of heatshrink tube over an M3x10mm steel screw with
-a head diameter between 5.0mm and 5.5mm. Make sure the screw is plain
-steel and not stainless.
+Add slight glue fillet.
 
-![M3 Screw](images/coil_01_materials.jpg "M3 Screw")
+![Glue Fillet](images/fdb_07_screw.jpg "Glue Fillet")
 
-After shrinking, there should be between 1.5mm and 2.0mm of thread exposed.
+![Mount](images/fdb_09_mount.jpg "Mount")
 
-![Leave 2mm Thread](images/coil_02_shrink.jpg "Leave 2mm Thread")
+Mount in winder.
 
-Wipe a bead of PVA glue at either end of the screw to form a small
-fillet.
+![Start Wires](images/fdb_10_rewind.jpg "Start Wires")
 
-Setup a winder with two spools of #43 polyurethane magnet wire.
-Attach wires to a piece of tape on the guide and ensure a clean
-feed of wire off each spool. This is the home position. Set speed
-control to minimum and power on.
+![1000 Turns](images/fdb_11_wind.jpg "1000 Turns")
 
-![Home Setup](images/home_setup.jpg "Home Setup")
+Wind about 1000 turns.
 
-Using white correction fluid, mark a single 40mm length on the left wire.
+![Glue Coil](images/fdb_12_glue.jpg "Glue Coil")
 
-![Mark Left Wire](images/mark_left_wire.jpg "Mark Left Wire")
+Finish with a thin layer of glue.
 
-Insert screw in winder spindle, finger tight.
+## Flipdot Mechanism
 
-Pull out start wires and wind them by hand a few turns over the
-left hand side of the screw. Tape the excess lead wire to the spindle
-leaving a small amount of slack where the wire attaches to the
-screw.
+FreeCAD model: [flipdot.FCStd](flipdot.FCStd)
 
-Reset counter on the winder and set speed control to minimum.
-Inspect spools and feed wires for tangles or twists.
+![SLS Body](images/fdb_01_raw.jpg "SLS Body")
 
-Guiding the wire with one hand, increase the speed control on the winder
-to a comfortable rate. Guide the wire back and forth across the length of
-the screw to get an even wrapping, keeping an eye on the counter. As
-the wind count passes 900, slow down the winder and guide the wire to
-the right and then left side of the screw, stopping at about 1000 turns.
+SLS printed housing.
 
-![Turned](images/turned.jpg "Turned")
+![File Housing](images/fdb_02_file.jpg "File Housing")
 
-Place the feed wires across the coil, and use a drop of pva glue to
-secure.
+![File Mount](images/fdb_03_file.jpg "File Mount")
 
-Gently wind back the feed spools to remove slack in the feed wires
-clearly separating the left and right feeds. Attach wires to the home
-position with a piece of tape, then mark the right feed wire with
-two roughly 10mm lengths of white correction fluid.
+File contact areas.
 
-![Mark End](images/mark_end.jpg "Mark End")
+![Smooth Mount](images/fdb_04_sand.jpg "Smooth Mount")
 
-Cut the feed wires near the home position, remove tape from spindle
-and then carefully unscrew coil from spindle by holding the screw
-assembly and turning the winder forward slowly by hand. Attach a 
-plastic spacer until ready to install in a flipdot assembly.
+Smooth contact areas with fine sandpaper.
 
-![Coil Ready](images/coil_ready.jpg "Coil Ready")
+![Tap Mounting Hole](images/fdb_05_thread.jpg "Tap Mounting Hole")
 
-## Flipdot Assembly
+![Tap Coil Hole](images/fdb_06_thread.jpg "Tap Coil Hole")
 
-TBA
+Tap mounting and coil holes with M3 thread.
 
-## 4x5 Modular Panel
+![Mount Coil](images/testcoil.jpg "Mount Coil")
 
-Each pixel in a 4x5 array has a pair of low-side drivers connected
-to 2 bits in a 40-bit shift register. Data is shifted into the display
-and latched to energise the chosen coils:
+## Pixel Preparation
+
+## Panel Assembly
+
+Kicad PCB: [flippnlr.pro](flippnlr.pro)
 
 ![Block Diagram](images/flippnlr_block.svg "Simplified Schematic")
 
- - flippnlr.pro : Kicad schematic and PCB
+![Solder Components](images/fdb_15_ready.jpg "Solder Components")
 
-Panels are designed to be daisy-chained to build up a larger panel.
+![Attach to Panel](images/fdb_13_mount.jpg "Attach to Panel")
+
+![Ready](images/fdb_14_ready.jpg "Ready")
 
 ## Interface
-
-A chain of display panels is driven using three signals:
 
  - D Data input (SDI)
  - DC Data clock (SCK)
  - RC Latch Clock 
 
-The required data is shifted into the display using D and DC, then
-latched to flipper coils by strobing RC. DC and RC have a minimum period
-of 200ns as shown below:
-
 ![Timing Diagram](images/timing.svg "Timing Diagram")
-
-D and DC can be driven by an SPI peripheral.
-
-## Firmware
-
-TBA
 
 ## License
 
