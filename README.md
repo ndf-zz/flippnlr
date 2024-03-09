@@ -1,4 +1,4 @@
-# Flipdot
+# Flippnlr - 4x5 DiY Flipdot Panel
 
 ![Panel 4x5](images/fd_panel.jpg "Panel 4x5`")
 
