@@ -1,3 +1,4 @@
 (sym_lib_table
-  (lib (name flippnlr)(type Legacy)(uri ${KIPRJMOD}/library/flippnlr.lib)(options "")(descr "Local parts"))
+  (lib (name "flippnlr")(type "Legacy")(uri "${KIPRJMOD}/library/flippnlr.lib")(options "")(descr "Local parts"))
+  (lib (name "flippnlr-rescue")(type "Legacy")(uri "${KIPRJMOD}/flippnlr-rescue.lib")(options "")(descr ""))
 )
